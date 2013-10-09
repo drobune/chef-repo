@@ -6,13 +6,13 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-package "httpd" do
-  action :install
-end
-
-service "httpd" do
-  action :start
-end
+#package "httpd" do
+#  action :install
+#end
+#
+#service "httpd" do
+#  action :start
+#end
 
 service 'iptables' do 
   action [:stop, :disable]

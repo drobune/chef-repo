@@ -1,0 +1,6 @@
+site :opscode
+
+cookbook 'git'
+cookbook 'ruby_build'
+cookbook 'rails'
+cookbook 'rails_application'

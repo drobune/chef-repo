@@ -1,1 +1,11 @@
-{"run_list":["cent64"]}
+{"run_list":[
+  "cent64",
+  "recipe[git]",
+  "recipe[ruby]",
+  "recipe[nginx]",
+  "recipe[unicorn]",
+  "recipe[application]",
+  "recipe[database]",
+  "recipe[rails_application]"
+    ]
+}
