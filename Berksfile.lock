@@ -6,6 +6,12 @@
     "rails": {
       "locked_version": "0.9.2"
     },
+    "user": {
+      "locked_version": "0.3.0"
+    },
+    "sudo": {
+      "locked_version": "2.3.0"
+    },
     "apt": {
       "locked_version": "2.2.0"
     },

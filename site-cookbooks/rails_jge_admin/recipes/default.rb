@@ -1,0 +1,32 @@
+#
+# Cookbook Name:: rails_jge_admin
+# Recipe:: default
+#
+# Copyright 2014, YOUR_COMPANY_NAME
+#
+# All rights reserved - Do Not Redistribute
+#
+user_account 'developer' do            # tsuchikazuというユーザを
+  action :create                        # 作成するよ
+  ssh_keys  ['ssh-rsa MIIEpAIBAAKCAQEAiPz1KFwvXNxhs8O8Q/mIl3u5m167qRHq+uGBvjSvuXlRi6hUCshXJqrtF8o2
+cGbyZB3WsyV4kWI8V1erYars5c+l2ro7GI3MEGM1GxLQoRXzXbDrmb70BvDavDuODo1FyA3hoiH5
+9NuWgsMSQL1pM4TnBuSmaHvnjPF9oXwG2KlS3AEFxyhdN5NSdNwpiTrGm8CAZsV6xn+Q+/OVKldb
+1sOSBkYxV0KP9/ksGSzMbOsIIWgVinDajf2kYQ16qNZ8BqdsyCSOR76hSc/0OPMm+9hEXIWPkjlz
+U1Mu6r0PwxC50JXVUj65NFjr9ynDxa1Rwo1zWfzX5u3XvzbHSd4F+wIDAQABAoIBAEJEU/f1ODgs
+p9rFKhKb6JaXFH9zgUZVU52Pbyrq48LOTENJ53Xb2kTrVIw4lsMjGciSoqTA0KVLpzL9RvuVKso0
++99mTWYgWgHna+4v2NrD+pltF1ulgvjElJuQF7U0Y/hVtruuwfLQMuwIn5DPz89LUFMGUvWiUq3c
+uFBg5hLyiOOBzP1N8lx7dxJ3LrYHhI5nkbOp4vviKUBvJy5iCG2s0vOZT1m5ae6c9ehqfGR0FHl0
+oJWq0zz4o+ntOmfB17Q2KjgKXziw6ovTjg0XBX2G99FGzxE7mKhQ1YVnBeIe62FuhbrRgMzUX5ih
+mbst0ZtzFyF6cIpR8+CVYTwHs9ECgYEAu1BPE4/EXvfVg2UQKo2jhz8auo26g1sJqvVKOojSvG1J
+4QriLeyMhpAY6RzrD9pkW973ld3NdZv4N0la/FkW1eb1E1r+6nvthxC1FfAIAaNJ0i9GZ0pg0TV6
+vMa41jMqag3cEWzDA8EKfuTRd0jBIYGbPj955QikuI5Wj+Lw4hkCgYEAuzhv1SM8bbps7PrdUsyL
+WS+rSYQZBQ1Yi4Z6AXJoN3D9uD774yg7YY9KazQh2aaWp16vTiocjTNdWNooLMuJGVQg3AuGNLub
++bclXeFChzvrQbNsSyPNaPRqw+O4KiVYIcdxM9QctcuB8NatdEh4rZlSHfCleh4U8KBfY+RGMzMC
+gYEAh+YQOSUJV81/f0EHpZf1mN5Tyh2hwEOAlCQ6opU6L7Mq8rcuuhrxKX/KUvbEJFBSl8UA5B50
+PmvWfmYeOQ953d8e19ghMoaPInsgprXrWSTbHj9mWPJBpAek8OlMmTut/hvoGkxKgKLBtqbUwjJq
+zKB3vYXYLi9DMxMyAlqoYaECgYEAjvkKbjn6a9FyXYc2fYS25eUBaaL3eGQ4ulR316MG80/Wcl2m
+/lI7BsXmjvfA4fXWFvq35XlDVJFlN/VhuNO2XyFf9qrWUm7zLkAuyQK9S4j2n7XlfXxZ4UzGO9Ir
+UgQyyZkFWg8h3bMMCF/pFmRBxFDR5QthU2ClnRzbu+0XrwECgYBG9Iw1rWO5ULaLoeP1Z7CMfqpc
+aa4Ngp8ftQxopzFUoZxs/dnYlGbOIVCMG6uYSk4u/4jjwzlm4mKafme9Lutxyq9bU5LKY4kIJXW4
+5FYz+y1+0GvpVt1+x6PtCW1Vakl6PZ2Takj6peOIPF4Ic0qQD4qcRgoIvYcGZvrUdpatuw==']  # authorized_keysはこれで
+end
