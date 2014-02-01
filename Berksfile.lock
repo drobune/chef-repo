@@ -3,6 +3,9 @@
     "nginx": {
       "locked_version": "2.0.0"
     },
+    "rails": {
+      "locked_version": "0.9.2"
+    },
     "apt": {
       "locked_version": "2.2.0"
     },
@@ -23,6 +26,12 @@
     },
     "yum": {
       "locked_version": "2.3.4"
+    },
+    "ruby": {
+      "locked_version": "0.9.2"
+    },
+    "apache2": {
+      "locked_version": "1.8.4"
     }
   }
 }
