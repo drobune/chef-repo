@@ -1,0 +1,14 @@
+{
+  "run_list":[
+    "recipe[user]",  
+    "recipe[sudo]",
+    "recipe[rails_jge_admin]"
+  ],   
+  "chef_environment": "_dev",
+  "authorization": {
+    "sudo": {
+      "users": ["developer"],   
+      "passwordless": "true"
+    }
+  }
+}
