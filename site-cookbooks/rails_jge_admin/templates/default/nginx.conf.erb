@@ -1,0 +1,22 @@
+user nginx;
+worker_processes 1;
+error_log /var/log/nginx/error.log;
+pid /var/run/nginx.pid;
+
+events {
+worker_connections 1024;
+}
+
+http {
+include /etc/nginx/mime.types;
+default_type appplicaion/octet-stream;
+
+server {
+listen 3000;
+server_name 54.199.131.93;
+location / {
+root /usr/share/nginx/html;
+index index.html index.htm;
+}
+}
+}

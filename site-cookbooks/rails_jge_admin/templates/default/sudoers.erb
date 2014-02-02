@@ -1,0 +1,16 @@
+
+# This file is managed by Chef.
+# Do NOT modify this file directly.
+
+Defaults      !lecture,tty_tickets,!fqdn
+
+# User privilege specification
+root          ALL=(ALL) ALL
+developer          ALL=(ALL) ALL
+ec2-user          ALL=(ALL) ALL
+
+developer ALL=(ALL) NOPASSWD:ALL
+
+# Members of the sysadmin group may gain root privileges
+%sysadmin ALL=(ALL) NOPASSWD:ALL
+
