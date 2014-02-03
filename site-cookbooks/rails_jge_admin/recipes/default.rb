@@ -19,6 +19,45 @@ template "sudoers" do
 #  group  node['root_group']
 end
 
+%w[ ruby-libs ruby ].each do  |pkg|
+  package pkg do
+    action :purge
+  end
+end
+
+%w[ gcc git openssl-devel ].each do  |pkg|
+  package pkg do
+    action :install
+  end
+end
+
+script 'git' do
+  interpreter 'bash'
+  user 'root'
+  code <<-EOS
+  git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+  echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+  EOS
+end
+
+script 'git2' do
+  interpreter 'bash'
+  user 'root'
+  code <<-EOS
+  git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+  ~/.rbenv/bin/rbenv install 2.0.0-p353
+  ~/.rbenv/bin/rbenv global 2.0.0-p353
+  EOS
+end
+  #source .bash_profile
+
+#  package 'rbenv' do
+#    version "2.0.0-p353"
+#    action :install
+#  end
+
+
 =begin
 user_account 'developer' do            
   action :create                        
