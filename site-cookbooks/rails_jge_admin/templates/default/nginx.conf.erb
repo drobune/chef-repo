@@ -4,19 +4,19 @@ error_log /var/log/nginx/error.log;
 pid /var/run/nginx.pid;
 
 events {
-worker_connections 1024;
+worker_connections 4096;
 }
 
 http {
-include /etc/nginx/mime.types;
-default_type appplicaion/octet-stream;
+  include /etc/nginx/mime.types;
+  default_type appplicaion/octet-stream;
 
-server {
-listen 172.31.24.133;
-server_name localhost;
-location / {
-root /usr/share/nginx/html;
-index index.html index.htm;
-}
-}
+  server {
+    listen 172.31.24.133;
+    server_name localhost;
+    location / {
+      root /var/www/jge-admin/public;
+      index index.html;
+    }
+  }
 }
